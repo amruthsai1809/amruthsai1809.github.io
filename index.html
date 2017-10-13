@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome!</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+
+
+      jQuery('.skillbar').each(function () {
+        jQuery(this).find('.skillbar-bar').animate({
+          width: jQuery(this).attr('data-percent')
+        }, 6000);
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+
+
+
+
+  <section>
+
+
+    <div>
+      <nav id="nav" class="navbar navbar-inverse">
+        <div class="container">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Aboutsec">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#ContactMe">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div id="Home" style="padding-top:20%;padding-bottom:30%;">
+        <div class="row">
+          <h2 style="text-align:center;color:rgb(240, 221, 221);">Amruth Sai Gandavarapu
+            <div class="rw-words rw-words-1">
+              <span>Front-end developer</span>
+              <span>Full stack developer</span>
+              <span>Software engineer </span>
+            </div>
+
+            <br>
+
+
+          </h2>
+          <div id="mainHead" style="text-align:center;color:#D62E2E">Passionate about web development to improve it's online presence!!</div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <div id="Aboutsec" style="padding-top:14%;padding-bottom:30%; ">
+          <div  class="row" >
+            <div class="col-md-12" >
+              <h1 class="headerme"><strong style="font-weight: 100;color:#CC4A4A ">Well Hello There! </strong></h1>
+              <h3 class="headerme"><strong style="font-weight: 100;color:#74DFDF ">A li'll bit about me: </strong></h3>
+              <p style="font-size:17px;color: rgba(184, 189, 138, 0.69) "><i>•I am a computer science graduate student, actively seeking fulltime opportunities where I can apply all my skills towards building a career in Software Engineering.<br>
+                
+                •I have experience in developing web applications using Spring Boot, AngularJS, Angular 4 and React.js and developing mobile applications in Android and iOS.<br>
+                •I have Good knowledge in RESTful API design and object-oriented programming.<br>
+                •Adept at developing apps based on new requirements, recommending application changes to make more efficient programs and upgrading existing applications to make them more useful.<br>
+
+
+</i></p>
+             
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id="Education" style="padding-top:10%;padding-bottom:25% ">
+          <div class="row"  >
+            <div class="col-lg-12">
+              <h3 class="text-center" style="color:rgb(240, 221, 221);">Education</h3>
+
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="uncc.png" alt=" ">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>University of North Carolina, Charlotte <br><span style="color:rgba(150, 151, 140, 0.53);">Aug 2016 – Dec 2017</span> &nbsp</h4>
+                      <h4 class="subheading" style="color:#919152">Masters in Computer Science</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">
+                        
+                      </p>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img class="img-circle img-responsive" src="gitam.jpg" alt=" ">
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>GITAM University, India<br><span style="color:rgba(150, 151, 140, 0.53);">July 2012 – April 2016 </span></h4>
+                      <h4 class="subheading" style="color:#919152">Bachelor of Technology in Electronics and Communication Engineering </h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="text-muted">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      <div >
+        <div >
+        <div class="row" id="Experience" style="padding-top:8%;padding-bottom:5% ">
+          <h2 style="text-align:center;color:rgb(240, 221, 221) ">Professional Experience</h2>
+        </div>
+        <div class="qa-message-list" id="wallmessages">
+
+          <div class="message-item" id="m16">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Software Developer Intern, Ace App Business Ventures Pvt Ltd, Chennai, India</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                              <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Jan 2016 – July 2016</span>
+                      
+                      
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px">
+                <i>•Developed responsive websites using HTML5, CSS3, JavaScript, AJAX, jQuery and Bootstrap.<br>
+                •Developed single page applications(SPA) using AngularJS, Angular 2.<br>
+                •Developed RESTful web services using Spring Boot.<br>
+                •Played active role in requirement analysis, designing, developing, debugging, testing.</i>
+                
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div >
+        <div class="row">
+          <h2 style="text-align:center;color:rgb(240, 221, 221) ">Academic Experience</h2>
+        </div>
+        <div class="qa-message-list" id="wallmessages">
+          <div class="message-item" id="m16">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Travel planner web application</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Aug 2016 – Dec 2016</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Developed a web application, which helps users find interesting places to visit, top hotels and weather conditions in the area. Implemented more features like travel reminders depending on the user’s itinerary. Followed the principles of agile methodology.<br>
+•Technologies used: HTML, CSS, AngularJS, java, Spring Boot, MySQL</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m9">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">My Clothing Closet</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Aug 2016 – Oct 2016 </span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Designed and developed an E-commerce website which allows users to donate clothes and buy the donated clothes that were donated by other users. Admin can monitor all the transactions and orders and can also approve or reject the donated clothes. Implemented triggers and stored procedures to enhance the functionality of the project. Achieved query optimization through indexing. <br>
+•Technologies used: J2EE, Ajax, HTML, CSS, JQuery and MySQL</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m7 ">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Book reading tracker </h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">May 2017  –  Sept 2017</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Developed a web application to browse for books based on categories and track the last read position in a volume. Created REST API services by using spring boot and developed front-end using angular 4.<br>
+•Technologies used: Spring Boot, Angular 4, java, HTML, CSS, MySQL.</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m6 ">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Twitter clone (Android and iOS mobile application) </h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Feb 2017 – May 2017</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Developed an application to clone functionality of Twitter. Features like signup and login, follow and unfollow users, sending out tweets, view tweets on timeline were implemented. 
+                <br>
+•Technologies used: Android studio, Xcode, java, swift, Firebase.</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m5 ">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Implementation of document search engine on Hadoop</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">June 2017 – Aug 2017</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Developed a basic search engine which would take a search string as input and provide the names of documents from a large set of documents relevant to the search query along with numeric relevance factor.<br>
+•Technologies used: java, Hadoop</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m4 ">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Chat app (iOS application)</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta ">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Oct 2016 – Dec 2016   </span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+               •Developed a messaging application similar to Messages app in iPhone. Additional features like login, signup and sending images have implemented. Designed an interactive keypad which makes the application more user-friendly. All the data has been downloaded asynchronously. Images are cached so that it will reduce user’s network cost.<br>
+•Technologies used: Xcode, swift, Firebase, JSON</i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="message-item" id="m3">
+            <div class="message-inner">
+              <div class="message-head clearfix">
+
+                <div class="user-detail">
+                  <h4 class="handle" style="color:rgb(201, 185, 185);">Trip planner (Android application)</h4>
+                  <div class="post-meta">
+                    <div class="asker-meta">
+                      <span class="qa-message-what"></span>
+                      <span class="qa-message-when">
+                                <span class="qa-message-when-data" style="color:rgb(201, 185, 185);">Jan 2017 – Mar 2017</span>
+                      </span>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="qa-message-content" style="color: rgba(184, 189, 138, 0.69)  ;font-size: 17px"><i>
+                •Developed an application which enables the user to create trips and invite friends to join him/her. App lets the user create an account either using a valid email or pre-existing Gmail id. User can send friend requests to other profiles and can create trips and add friends to the trips. A trip consists of chat screen where all the people in the trip can chat with each other and plan the trip. Users can search places to visit and add them to the trip using Google’s place picker API. User can see the round trip on Google maps, which is enabled by Google maps API.<br>
+•Technologies used: Android studio, java, Firebase</i>
+
+              </div>
+            </div>
+          </div>
+
+         
+          
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+        <div class="row" id="Skills" style="padding-top:10%;padding-bottom:25% ">
+          <h2 style="text-align:center;color:rgb(240, 221, 221) ">Things I am good at</h2>
+
+          <div class="col-md-6" style="margin-top:10% ">
+
+
+            <div class="skillbar clearfix" data-percent="80%">
+              <div class="skillbar-title" style="background: #DA1111; "><span>HTML5</span></div>
+              <div class="skillbar-bar" style="background: #DA1111; "></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="80%">
+              <div class="skillbar-title" style="background: #D8DB17; "><span>CSS3</span></div>
+              <div class="skillbar-bar" style="background: #D8DB17; "></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #5FE00F; "><span>JavsScript</span></div>
+              <div class="skillbar-bar" style="background: #5FE00F; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #14DBA6; "><span>AngularJS</span></div>
+              <div class="skillbar-bar" style="background: #14DBA6; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #0E89E7; "><span>Angular 2/4</span></div>
+              <div class="skillbar-bar" style="background: #0E89E7; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="80%">
+              <div class="skillbar-title" style="background: #E614E6; "><span>Bootstrap</span></div>
+              <div class="skillbar-bar" style="background: #E614E6; "></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+              <div class="skillbar-title" style="background: #DB1252; "><span>jQuery</span></div>
+              <div class="skillbar-bar" style="background: #DB1252; "></div>
+              <div class="skill-bar-percent">60%</div>
+            </div>
+          </div>
+          <div class="col-md-6" style="margin-top:10%;">
+            <div class="skillbar clearfix" data-percent="80%">
+              <div class="skillbar-title" style="background: #DB1277; "><span>Java</span></div>
+              <div class="skillbar-bar" style="background: #DB1277; "></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+              <div class="skillbar-title" style="background: #2C58AA; "><span>Swift</span></div>
+              <div class="skillbar-bar" style="background: #2C58AA; "></div>
+              <div class="skill-bar-percent">60%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #07776C; "><span>SQL</span></div>
+              <div class="skillbar-bar" style="background: #07776C; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #6F810A; "><span>Spring Boot</span></div>
+              <div class="skillbar-bar" style="background: #6F810A; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+              <div class="skillbar-title" style="background: #9B800A; "><span>Hadoop</span></div>
+              <div class="skillbar-bar" style="background: #9B800A; "></div>
+              <div class="skill-bar-percent">60%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+              <div class="skillbar-title" style="background: #088F99; "><span>iOS</span></div>
+              <div class="skillbar-bar" style="background: #088F99; "></div>
+              <div class="skill-bar-percent">60%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+              <div class="skillbar-title" style="background: #A10797; "><span>Android</span></div>
+              <div class="skillbar-bar" style="background: #A10797; "></div>
+              <div class="skill-bar-percent">70%</div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+<div id="ContactMe" style="padding-top:8%;padding-bottom:25% ">
+
+        <div class="row" >
+         <div class="col-md-12">
+          <h2 style="text-align:center;color:rgb(240, 221, 221); ">I'd love to hear from you!!
+          <br>
+              <span><strong style="font-weight: 100; color: #E6714D "> Got a project you would like me to work on?<br/> Great! Drop me an email and I will get back to you!! </strong></span>
+          </h2>
+
+
+
+          <div style="text-align:center; ">
+          <a href="mailto:amruthsai1809@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://www.linkedin.com/in/amruth-sai-gandavarapu-321495123/" target="_blank"><i class="fa fa-linkedin
+            fa-2x" aria-hidden="true "></i></a>&nbsp
+            </div>
+
+
+
+           
+
+
+
+
+         </div>
+          
+
+        </div>
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+    
+
+  </section>
+
+
+
+
+
+</body>
+</html>
